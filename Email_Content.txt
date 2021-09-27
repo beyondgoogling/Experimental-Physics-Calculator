@@ -1,0 +1,9 @@
+<!DOCTYPPE html>
+            <html>
+                <body>
+                
+                    <h1>TEST MAIL</h1>
+                    
+                </body>
+            </html>            
+                   
