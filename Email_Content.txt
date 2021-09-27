@@ -438,7 +438,7 @@
   <![endif]-->
   </head>
   <body>
-    <span class="preheader">This is an invoice for your purchase on {{ purchase_date }}. Please submit payment by {{ due_date }}</span>
+    <span class="preheader"></span>
     <table class="email-wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
         <td align="center">
@@ -467,14 +467,16 @@
                                 <tr>
                                   <td class="attributes_item">
                                     <span class="f-fallback">
-              <strong>Amount Due:</strong> {{total}}
+              <br><strong>Bank Name:</strong> {{Bank}}</br>
+	      <br><strong>Account Name Name:</strong> {{AccNam}}</br>
+              <br><strong>Account Number:</strong> {{AccNum}}</br>
             </span>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td class="attributes_item">
                                     <span class="f-fallback">
-              <strong>Due By:</strong> {{due_date}}
+              <br><strong>Amount Paid:</strong> {{AmountPaid}}</br>
             </span>
                                   </td>
                                 </tr>
@@ -491,7 +493,7 @@
                               <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
                                 <tr>
                                   <td align="center">
-                                    <a href="{{action_url}}" class="f-fallback button button--green" target="_blank">Pay Invoice</a>
+                                    <a href="{{action_url}}" class="f-fallback button button--green" target="_blank">Transaction Invoice</a>
                                   </td>
                                 </tr>
                               </table>
@@ -518,12 +520,12 @@
                                     <p class="f-fallback">Amount</p>
                                   </th>
                                 </tr>
-                                {{#each invoice_details}}
+                                <br><center><strong>Transaction Summary</strong></center></br>
                                 <tr>
-                                  <td width="80%" class="purchase_item"><span class="f-fallback">{{description}}</span></td>
-                                  <td class="align-right" width="20%" class="purchase_item"><span class="f-fallback">{{amount}}</span></td>
+                                  <td width="80%" class="purchase_item"><span class="f-fallback"><br><br><pr>Total Payable Amount</pr></br></br><br><br><pr>Charges</pr></br></br></span></td>
+                                  <td class="align-right" width="20%" class="purchase_item"><span class="f-fallback"><br><pr>{{TPA}}</pr></br><br><br><pr>{{Charges}}</pr></b></br</span></td>
                                 </tr>
-                                {{/each}}
+                                
                                 <tr>
                                   <td width="80%" class="purchase_footer" valign="middle">
                                     <p class="f-fallback purchase_total purchase_total--label">Total</p>
@@ -561,7 +563,7 @@
                     <td class="content-cell" align="center">
                       <p class="f-fallback sub align-center">&copy; 2021 Affimarts. All rights reserved.</p>
                       <p class="f-fallback sub align-center">
-                        [Affimarts Network]
+                        Affimarts Network
                         <br>Lagos, Nigeria.
                       </p>
                     </td>
