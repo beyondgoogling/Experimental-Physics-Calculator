@@ -459,7 +459,7 @@
                     <td class="content-cell">
                       <div class="f-fallback">
                         <h1>Hi {{name}},</h1>
-                        <p>You Have Received a Payment of {{Amount}} From Affimarts Networks.</p>
+                        <p>You Have Received a Payment of #{{Amount}} From Affimarts Networks.</p>
                         <table class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td class="attributes_content">
